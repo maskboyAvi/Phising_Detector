@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+nltk
+matplotlib
+seaborn
+tensorflow
+keras
+fastapi
+uvicorn
+python-multipart
+requests
+beautifulsoup4

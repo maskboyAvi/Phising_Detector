@@ -1,0 +1,17 @@
+# Backend Requirements - Updated to match Colab versions
+# These versions are compatible with models trained in Colab
+
+# Core ML libraries - MUST match Colab training environment
+numpy==1.26.4
+scikit-learn==1.4.2
+nltk==3.8.1
+
+# Web framework
+fastapi==0.110.0
+uvicorn==0.29.0
+pydantic==2.6.4
+
+# CORS support
+python-multipart==0.0.9
+
+# Install with: pip install -r requirements.txt

@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0f1e;
+  --bg-secondary: #141b2d;
+  --bg-card: #1a2332;
+  --text-primary: #ffffff;
+  --text-secondary: #b8c5d6;
+  --text-muted: #8895a7;
+  --accent-primary: #4f7cff;
+  --accent-secondary: #3461e6;
+  --border-color: #2d3748;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--accent-secondary);
+}
+
+/* Improved headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Better spacing */
+p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Card styling */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button improvements */
+button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 124, 255, 0.3);
+}
+
+/* Input fields */
+input, textarea, select {
+  font-size: 1.05rem;
+  padding: 0.875rem 1rem;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+/* Labels */
+label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Enhanced Circuit Board Background Pattern */
+.circuit-bg {
+  background-color: #0a0a1a;
+  background-image:
+    repeating-linear-gradient(90deg, transparent, transparent 35px, rgba(65, 105, 225, 0.08) 35px, rgba(65, 105, 225, 0.08) 36px),
+    repeating-linear-gradient(180deg, transparent, transparent 35px, rgba(65, 105, 225, 0.08) 35px, rgba(65, 105, 225, 0.08) 36px),
+    radial-gradient(circle at 10% 20%, rgba(65, 105, 225, 0.03), transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(65, 105, 225, 0.03), transparent 40%);
+  position: relative;
+}
+
+.circuit-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    repeating-linear-gradient(45deg, transparent, transparent 80px, rgba(65, 105, 225, 0.01) 80px, rgba(65, 105, 225, 0.01) 160px);
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a3e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a4e;
+}
+
+/* Glowing Border Effect */
+.glow-border {
+  border: 1px solid rgba(65, 105, 225, 0.3);
+  box-shadow: 0 0 10px rgba(65, 105, 225, 0.1), inset 0 0 10px rgba(65, 105, 225, 0.05);
+}
+
+.glow-border-strong {
+  border: 2px solid rgba(65, 105, 225, 0.5);
+  box-shadow: 0 0 20px rgba(65, 105, 225, 0.2), inset 0 0 20px rgba(65, 105, 225, 0.08);
+}
