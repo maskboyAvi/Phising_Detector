@@ -1,10 +1,15 @@
-# Backend Requirements - Updated to match Colab versions
-# These versions are compatible with models trained in Colab
+# Backend Requirements - Updated for Advanced Models
+# These versions match Colab training environment
 
 # Core ML libraries - MUST match Colab training environment
 numpy==1.26.4
 scikit-learn==1.4.2
+pandas==2.2.2
 nltk==3.8.1
+
+# Deep Learning for DistilBERT content classifier
+torch==2.1.2
+transformers==4.36.2
 
 # Web framework
 fastapi==0.110.0

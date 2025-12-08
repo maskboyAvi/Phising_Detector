@@ -1,10 +1,12 @@
-from .content_classifier import ContentClassifier
-from .url_classifier import URLClassifier
+from .content_classifier_advanced import ContentClassifierAdvanced
+from .url_classifier_advanced import URLClassifierAdvanced
 
 class EnsembleClassifier:
     def __init__(self):
-        self.content_clf = ContentClassifier()
-        self.url_clf = URLClassifier()
+        print("Initializing advanced classifiers...")
+        self.content_clf = ContentClassifierAdvanced()
+        self.url_clf = URLClassifierAdvanced()
+        print("✓ Ensemble ready with DistilBERT + RF(25 features)")
     
     def predict_full_email(self, email_body, headers=None, urls=None):
         content_result = self.content_clf.predict(email_body, headers)
