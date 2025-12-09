@@ -2,6 +2,7 @@
 
 Dual-mode phishing detection using NLP and machine learning. Analyzes email content and URLs to identify phishing attempts with comprehensive indicator extraction.
 
+**Demo Video :** https://youtu.be/PWgZXcUmApw
 ## Features
 
 - **Dual-Mode Analysis**
