@@ -86,7 +86,11 @@ MIT License - See LICENSE file
 ## Authors
 
 Aviral Katiyar
+
 Kashish Garg
+
 Yash Agarwal
+
 Neelesh Saxena
+
 Kshitij Gupta
