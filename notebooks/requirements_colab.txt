@@ -1,7 +1,4 @@
-# UPDATED: Colab Training Requirements
-# These versions work with Colab's Python 3.10+ and have pre-built wheels
-
-# Core ML libraries - Updated for Colab compatibility
+# Core ML libraries 
 numpy==1.26.4
 scikit-learn==1.4.2
 nltk==3.8.1
@@ -9,9 +6,9 @@ nltk==3.8.1
 # Data processing
 pandas==2.2.2
 
-# Visualization (optional)
+# Visualization
 matplotlib==3.8.4
 seaborn==0.13.2
 
 # Install in Colab with:
-# !pip install -r requirements_colab.txt
+#!pip install -r requirements_colab.txt
